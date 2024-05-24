@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="keywords" />
+    <meta name="description" content="content" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/slider.js" defer></script>
+    <title>CARGOFF</title>
+  </head>
+
+  <body>
+    <header class="header container-xl">
+      <div class="header__inner">
+        <div class="header__location">
+          <span class="header__location-text">Ростов-на-Дону</span>
+        </div>
+        <div class="header__container">
+          <div class="header__logo-wrapper">
+            <a class="header__logo" href="#">
+              <img
+                class="header__logo-img"
+                src="./assets/images/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <span class="header__slogan">Логистика на все случаи бизнеса</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__menu list-reset">
+              <li class="menu__item">
+                <a class="menu__link link" href="#services">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="#about">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="#contacts">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <span class="input__search">Поиск</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts-wrapper">
+            <a class="header__phone" href="tel:+8(800)250-07-47"
+              >8 (800) 250-07-47</a
+            >
+            <span class="header__phone-text">Бесплатно по всей России</span>
+          </div>
+          <div class="overlay"></div>
+          <div class="menu__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header__drop-menu">
+        <div class="header__drop-inner">
+          <div class="drop-menu">
+            <div class="drop-menu__item menu-1">
+              <span class="drop-menu__title">Грузоперевозки</span>
+            </div>
+            <div class="drop-menu__item menu-2">
+              <span class="drop-menu__title">Автопарк</span>
+            </div>
+            <div class="drop-menu__item menu-3">
+              <span class="drop-menu__title">Маршруты</span>
+            </div>
+            <div class="drop-menu__item menu-4">
+              <span class="drop-menu__title">Расчет доставки</span>
+            </div>
+          </div>
+          <a href="#popup-delivery" class="popup-link popup__btn btn">
+            Заказать звонок
+            <span class="btn-blick"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="container-xl">
+      <section class="preview">
+        <h1 class="preview__title">transportation</h1>
+        <div class="preview__inner">
+          <img
+            class="preview__img"
+            src="./assets/images/img-main.png"
+            alt="img-preview"
+          />
+          <div class="preview__inner-wrapper">
+            <h2 class="preview__subtitle">logistic</h2>
+            <p class="preview__text">
+              Грузоперевозки <br />
+              во все регионы России
+            </p>
+          </div>
+        </div>
+        <div class="calculation">
+          <form class="calculation__form" id="form-1">
+            <div class="calculation__input-icon">
+              <input
+                class="calculation__input _req"
+                type="text"
+                name="from"
+                id="from"
+                placeholder="Откуда"
+                autocomplete="off"
+              />
+            </div>
+            <div class="calculation__input-icon">
+              <input
+                class="calculation__input _req"
+                type="text"
+                name="to"
+                id="to"
+                placeholder="Куда"
+                autocomplete="off"
+              />
+            </div>
+            <div class="calculation__input-icon">
+              <input
+                class="calculation__input _req"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Ваш телефон"
+                autocomplete="off"
+              />
+            </div>
+            <button class="calculation__button" type="submit" name="submit-1">
+              Рассчитать доставку
+            </button>
+          </form>
+          <p class="calculation__text">
+            Отправляя заявку Вы соглашаетесь c политикой конфиденциальности
+          </p>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services__cards">
+          <div class="services__card">
+            <h3 class="services__title">
+              Доставка
+              <span class="text-blue"
+                >в сетевые <br />
+                магазины</span
+              >
+            </h3>
+            <p class="services__text">
+              доставим товар в Ozon, Wildberries и другие маркетплейсы России -
+              точно в срок
+            </p>
+            <img src="./assets/images/advantages/img_shop.png" alt="img-shop" />
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">
+              Доставка
+              <span class="text-blue"
+                >опасных <br />
+                грузов</span
+              >
+            </h3>
+            <p class="services__text">
+              перевозим грузы <br />
+              любого класса опасности <br />
+              на специально оборудованных <br />
+              транспортных средствах
+            </p>
+            <img
+              src="./assets/images/advantages/img_danger.png"
+              alt="img-danger"
+            />
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">
+              Доставка
+              <span class="text-blue"
+                >сборных <br />
+                грузов</span
+              >
+            </h3>
+            <p class="services__text">
+              снижает стоимость <br />
+              доставки груза <br />
+              на значительные расстояния
+            </p>
+            <img
+              src="./assets/images/advantages/img_gr-cargo.png"
+              alt="img_gr-cargo"
+            />
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">
+              Логистика
+              <span class="text-blue">
+                <br />
+                для АПК</span
+              >
+            </h3>
+            <p class="services__text">
+              от доставки оборудования для сбора урожая — <br />
+              до вывоза урожая и <br />
+              доставки продукции <br />
+              в торговые точки
+            </p>
+            <img src="./assets/images/advantages/img_apk.png" alt="img_apk" />
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">
+              <span class="text-blue">Негабаритные <br /> </span>перевозки
+            </h3>
+            <p class="services__text">
+              организуем транспортировку <br />
+              крупных нестандартных грузов
+            </p>
+            <img
+              src="./assets/images/advantages/img_small.png"
+              alt="img_small"
+            />
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">
+              <span class="text-blue">Рефрижераторные <br /> </span>перевозки
+            </h3>
+            <p class="services__text">
+              доставка температурных грузов <br />
+              для сохранение качества <br />
+              продуктов
+            </p>
+            <img
+              src="./assets/images/advantages/img_refrigerator.png"
+              alt="img_refrigerator"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__wrapper">
+          <div class="about__description">
+            <h2 class="about__title">
+              Доставка транспортной компанией Каргофф
+            </h2>
+            <p class="about__text">
+              Логистическая компания Каргофф перевозит грузы по всей России.
+              Наши менеджеры всегда на связи, логисты — готовы составить самый
+              короткий и безопасный маршрут, водители-экспедиторы — аккуратно
+              доставить ваш груз до места назначения.
+            </p>
+            <p class="about__text">
+              У нас вы можете заказать перевозку любых, в том числе
+              нестандартных и крупногабаритных грузов по всей России. Мы
+              предлагаем комплексные решения по перевозке грузов для
+              производителей, дилерских сетей, магазинов.
+            </p>
+            <p class="about__text">
+              Где бы вы не находились и куда бы не хотели отправить автогруз —
+              позвоните нам, закажите выгодную перевозку груза в компании
+              Каргофф.
+            </p>
+          </div>
+          <ul class="about__list">
+            <li class="about__list-item">
+              Всё нужное в одном месте - от подбора оптимального маршрута до
+              доставки груза
+            </li>
+            <li class="about__list-item">
+              Различные виды транспорта: тентованные, бортовые,
+              цельнометаллические, тралы, зерновозы, рефрижераторы и др.
+            </li>
+            <li class="about__list-item">Работаем со всеми видами грузов</li>
+            <li class="about__list-item">
+              Более 100 направлений доставки по РФ
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="offer">
+        <div class="offer__wrapper" id="tabContainer">
+          <div class="offer__tabs">
+            <button
+              onclick="changeTab('tab1', this)"
+              class="tab__btn active-tab tab-color"
+            >
+              Для бизнеса
+            </button>
+            <button onclick="changeTab('tab2', this)" class="tab__btn">
+              Производителям
+            </button>
+            <button onclick="changeTab('tab3', this)" class="tab__btn">
+              Интернет-магазинам
+            </button>
+            <button onclick="changeTab('tab4', this)" class="tab__btn">
+              Сотрудничество
+            </button>
+          </div>
+          <div id="tab1" class="tab-content active-tab">
+            <p class="offer__text">
+              Выгодные условия грузоперевозки для предпринимателей. Доставим
+              любые грузы, в том числе нестандартные и крупногабаритные по всей
+              России. <br />
+              На 20% повышаем эффективность ваших бизнес-процессов за счет
+              грамотных логистических решений.
+            </p>
+            <div class="offer__cards">
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_cargo_group.svg"
+                    alt="icon_cargo_group"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка сборного <br />
+                    груза</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Экономичная доставка грузов <br />
+                  от 1 тонны по всей России
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_transport.svg"
+                    alt="icon_transport"
+                  />
+                  <span class="offer__card-title"
+                    >Перевозка выделенным <br />
+                    транспортом</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Оперативная доставка груза отдельной <br />
+                  машиной по вашему маршруту.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_marketplaces.svg"
+                    alt="icon_marketplaces"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка <br />
+                    в маркетплейсы</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Доставим товар в Ozon, Wildberries и другие <br />
+                  маркетплейсы России - точно в срок.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__link-card">
+                <div class="link-card__inner">
+                  <img
+                    class="link-card__img"
+                    src="./assets/images/icons/logo.svg"
+                    alt="logo CARGOFF"
+                  />
+                  <span class="link-card__text"
+                    >смотреть все предложения <br />
+                    для бизнеса</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab-content active-tab">
+            <p class="offer__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+              placeat explicabo itaque exercitationem, sapiente porro sequi eum
+              asperiores illum voluptatibus adipisci minima sit aspernatur qui
+              ullam vel natus nemo fugit!
+            </p>
+            <div class="offer__cards">
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_transport.svg"
+                    alt="icon_transport"
+                  />
+                  <span class="offer__card-title"
+                    >Перевозка выделенным <br />
+                    транспортом</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Оперативная доставка груза отдельной <br />
+                  машиной по вашему маршруту.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_cargo_group.svg"
+                    alt="icon_cargo_group"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка сборного <br />
+                    груза</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Экономичная доставка грузов <br />
+                  от 1 тонны по всей России
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_marketplaces.svg"
+                    alt="icon_marketplaces"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка <br />
+                    в маркетплейсы</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Доставим товар в Ozon, Wildberries и другие <br />
+                  маркетплейсы России - точно в срок.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__link-card">
+                <div class="link-card__inner">
+                  <img
+                    class="link-card__img"
+                    src="./assets/images/icons/logo.svg"
+                    alt="logo CARGOFF"
+                  />
+                  <span class="link-card__text"
+                    >смотреть все предложения <br />
+                    для бизнеса</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-content active-tab">
+            <p class="offer__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+              placeat explicabo itaque exercitationem, sapiente porro sequi eum
+              asperiores illum voluptatibus adipisci minima sit aspernatur qui
+              ullam vel natus nemo fugit!3
+            </p>
+            <div class="offer__cards">
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_marketplaces.svg"
+                    alt="icon_marketplaces"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка <br />
+                    в маркетплейсы</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Доставим товар в Ozon, Wildberries и другие <br />
+                  маркетплейсы России - точно в срок.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_transport.svg"
+                    alt="icon_transport"
+                  />
+                  <span class="offer__card-title"
+                    >Перевозка выделенным <br />
+                    транспортом</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Оперативная доставка груза отдельной <br />
+                  машиной по вашему маршруту.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_cargo_group.svg"
+                    alt="icon_cargo_group"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка сборного <br />
+                    груза</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Экономичная доставка грузов <br />
+                  от 1 тонны по всей России
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__link-card">
+                <div class="link-card__inner">
+                  <img
+                    class="link-card__img"
+                    src="./assets/images/icons/logo.svg"
+                    alt="logo CARGOFF"
+                  />
+                  <span class="link-card__text"
+                    >смотреть все предложения <br />
+                    для бизнеса</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="tab-content active-tab">
+            <p class="offer__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+              placeat explicabo itaque exercitationem, sapiente porro sequi eum
+              asperiores illum voluptatibus adipisci minima sit aspernatur qui
+              ullam vel natus nemo fugit!4
+            </p>
+            <div class="offer__cards">
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_marketplaces.svg"
+                    alt="icon_marketplaces"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка <br />
+                    в маркетплейсы</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Доставим товар в Ozon, Wildberries и другие <br />
+                  маркетплейсы России - точно в срок.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_transport.svg"
+                    alt="icon_transport"
+                  />
+                  <span class="offer__card-title"
+                    >Перевозка выделенным <br />
+                    транспортом</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Оперативная доставка груза отдельной <br />
+                  машиной по вашему маршруту.
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card-inner">
+                  <img
+                    src="./assets/images/icons/icon_cargo_group.svg"
+                    alt="icon_cargo_group"
+                  />
+                  <span class="offer__card-title"
+                    >Отправка сборного <br />
+                    груза</span
+                  >
+                </div>
+                <p class="offer__card-text">
+                  Экономичная доставка грузов <br />
+                  от 1 тонны по всей России
+                </p>
+                <a href="#popup-delivery" class="popup-link popup__btn btn">
+                  Заказать
+                  <span class="btn-blick"></span>
+                </a>
+              </div>
+              <div class="offer__link-card">
+                <div class="link-card__inner">
+                  <img
+                    class="link-card__img"
+                    src="./assets/images/icons/logo.svg"
+                    alt="logo CARGOFF"
+                  />
+                  <span class="link-card__text"
+                    >смотреть все предложения <br />
+                    для бизнеса</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="gallery">
+        <div class="gallery__container">
+          <div class="gallery__wrapper">
+            <!-- SLIDER -->
+            <div class="slider__wrapper">
+              <div class="gallery__slider swiper">
+                <h3 class="gallery__title">
+                  Каким транспортом мы перевозим грузы?
+                </h3>
+                <div class="swiper-wrapper gallery__slider-wrapper">
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/01.png" alt="01" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title"
+                            >Цельнометаллический</span
+                          >
+                          <p class="gallery__card-text">
+                            для безопасной и надежной <br />
+                            доставки большинства грузов
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/02.png" alt="02" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title">Тентованный</span>
+                          <p class="gallery__card-text">
+                            для безопасной перевозки грузов, <br />
+                            конструкция фур обеспечивает <br />
+                            легкий доступ к грузу
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/03.png" alt="03" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title">Бортовой</span>
+                          <p class="gallery__card-text">
+                            для перевозки негабаритного <br />
+                            и крупногабаритного грузов
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/04.png" alt="04" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title"
+                            >Рефрижераторный
+                          </span>
+                          <p class="gallery__card-text">
+                            для транспортировки скоропортящихся <br />
+                            грузов с особыми требованиями <br />
+                            к температурному режиму хранения
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/01.png" alt="01" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title"
+                            >Цельнометаллический</span
+                          >
+                          <p class="gallery__card-text">
+                            для безопасной и надежной <br />
+                            доставки большинства грузов
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/02.png" alt="02" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title">Тентованный</span>
+                          <p class="gallery__card-text">
+                            для безопасной перевозки грузов, <br />
+                            конструкция фур обеспечивает <br />
+                            легкий доступ к грузу
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/03.png" alt="03" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title">Бортовой</span>
+                          <p class="gallery__card-text">
+                            для перевозки негабаритного <br />
+                            и крупногабаритного грузов
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__card">
+                      <div class="gallery__card-wrapper">
+                        <img src="./assets/images/transport/04.png" alt="04" />
+                        <div class="gallery__card-inner">
+                          <span class="gallery__card-title"
+                            >Рефрижераторный
+                          </span>
+                          <p class="gallery__card-text">
+                            для транспортировки скоропортящихся <br />
+                            грузов с особыми требованиями <br />
+                            к температурному режиму хранения
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="#popup-delivery"
+                        class="popup-link gallery__btn btn"
+                      >
+                        Заказать
+                        <span class="btn-blick"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__slider-nav">
+                <div class="swiper-button-prev slider__btn-prev"></div>
+                <div class="swiper-button-next slider__btn-next"></div>
+              </div>
+            </div>
+            <div class="swiper-pagination gallery__pagination"></div>
+            <!-- SLIDER END -->
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="popular__container">
+          <div class="popular__description">
+            <h2 class="popular__title">
+              Популярные направления из Ростов-на-Дону
+            </h2>
+            <p class="popular__text">
+              Выгодные способы доставки груза в любой город России: отдельной
+              машиной, сборными грузами, догрузом. У нас большой автопарк:
+              газели, Камазы, бычки, фуры, еврофуры <br />
+              тентованные, с рефрижератором, изотермы, грузовые машины с разным
+              типом погрузки — с боковой, задней и верхней погрузкой. <br />
+              Доставим вашу продукцию в любую точку страны по выгодной цене!
+            </p>
+          </div>
+          <div class="popular__inner">
+            <div class="popular__badge">
+              <span class="popular__badge-title">24/7</span>
+              <span class="popular__badge-subtitle"
+                >доставляем грузы <br />
+                в любую точку РФ</span
+              >
+            </div>
+            <ul class="popular__list">
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Волгоград</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Воронеж</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Екатеринбург</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Казань</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Краснодар</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Красноярск</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Липецк</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Минеральные Воды</a>
+              </li>
+
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Москву</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Набережные Челны</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Нижний Новгород</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Новороссийск</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Омск</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Самару</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Санкт-Петербург</a>
+              </li>
+
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Саратов</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Сочи</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Ставрополь</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Тольятти</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Тулу</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Тюмень</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Уфу</a>
+              </li>
+              <li class="popular__list-item">
+                <a class="popular__list-link" href="#">в Челябинск</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__container">
+          <div class="feedback__description">
+            <h3 class="feedback__title">
+              Отправить груз <br />
+              c
+              <img
+                class="feedback__img"
+                src="./assets/images/icons/logo.svg"
+                alt="logo CARGOFF"
+              />
+              <br />
+              - это просто!
+            </h3>
+            <p class="feedback__text">
+              Оставьте заявку, и мы решим ваш вопрос!
+            </p>
+          </div>
+          <div class="feedback__form-wrapper">
+            <form class="feedback__form" id="form-2">
+              <input
+                class="feedback__input _req"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ваше имя"
+                autocomplete="off"
+              />
+              <input
+                class="feedback__input _req"
+                type="tel"
+                name="phone"
+                id="phone-2"
+                placeholder="Ваш телефон"
+                autocomplete="off"
+              />
+              <button class="feedback__button btn" type="submit" name="submit-2">
+                Оставить заявку
+                <span class="btn-blick"></span>
+              </button>
+              <p class="feedback__text-sm">
+                Отправляя заявку Вы соглашаетесь c политикой конфиденциальности
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="seo-block">
+        <div class="seo-block__container">
+          <div class="seo-block__wrapper">
+            <h2 class="seo-block__title">
+              Транспортная компания Каргофф в Ростове-на-Дону
+            </h2>
+            <p class="seo-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              pharetra pellentesque lacus, ac ultricies augue semper quis.
+              Nullam dignissim arcu at lacinia facilisis. Ut sit amet accumsan
+              lorem. In semper nisl quis congue venenatis. Donec aliquet
+              hendrerit facilisis. Curabitur mollis sapien a felis pharetra, in
+              eleifend odio consectetur. Mauris dictum, neque sit amet porttitor
+              vulputate, odio nisi dapibus ipsum, sed cursus massa felis vel ex.
+              Fusce interdum bibendum tortor, et sodales ligula gravida at.
+              Integer sit amet justo eu orci tincidunt euismod ut ac
+              tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam pharetra pellentesque lacus, ac ultricies augue semper quis.
+              Nullam dignissim arcu
+              <a href="#" class="seo-block__link">гиперссылка</a> facilisis. Ut
+              sit amet accumsan lorem. In semper nisl quis congue venenatis.
+              Donec aliquet hendrerit facilisis. Curabitur mollis sapien a felis
+              pharetra, in eleifend odio consectetur. Mauris dictum, neque sit
+              amet porttitor vulputate, odio nisi dapibus ipsum, sed cursus
+              massa felis vel ex. Fusce interdum bibendum tortor, et sodales
+              ligula gravida at. Integer sit amet justo eu orci tincidunt
+              euismod ut ac tortor.apibus ipsum, sed cursus massa felis vel ex.
+              Fusce interdum bibendum tortor, et sodales ligula gravida at.
+              Integer sit amet justo eu orci tincidunt euismod Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Etiam pharetra pellentesque
+              lacus, ac ultricies augue semper quis. Nullam dignissim arcu at
+              lacinia facilisis. Ut sit amet accumsan lorem. In semper nisl quis
+              congue venenatis. Donec aliquet hendrerit facilisis. Curabitur
+              mollis sapien a felis pharetra, in eleifend odio consectetur.
+              Mauris dictum, neque sit amet porttitor vulputate, odio nisi
+              dapibus ipsum, sed cursus massa felis vel ex. Fusce interdum
+              bibendum tortor, et sodales ligula gravida at. Integer sit amet
+              justo eu orci tincidunt euismod ut ac tortor.Lorem<span
+                id="dots-2"
+                >...</span
+              >
+              <button
+                class="seo-block__btn"
+                onclick="showAllText()"
+                id="btnMoreText"
+              >
+                Читать далее
+              </button>
+            </p>
+            <div class="seo-block__hidden" id="more-text">
+              <div class="seo-block__wrapper-2">
+                <h2 class="seo-block__title-2">Блок заголовок h2</h2>
+                <div class="seo-block__description">
+                  <p class="seo-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam pharetra pellentesque lacus, ac ultricies augue semper
+                    quis. Nullam dignissim arcu at lacinia facilisis. Ut sit
+                    amet accumsan lorem. In semper nisl quis congue venenatis.
+                    Donec aliquet hendrerit facilisis. Curabitur mollis sapien a
+                    felis pharetra, in eleifend odio consectetur. Mauris dictum,
+                    neque sit amet porttitor vulputate, odio nisi dapibus ipsum,
+                    sed cursus massa felis vel ex. Fusce interdum bibendum
+                    tortor, et sodales ligula gravida at. Integer sit amet justo
+                    eu orci tincidunt euismod ut ac tortor.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Etiam pharetra
+                    pellentesque lacus, ac ultricies augue semper quis. Nullam
+                    dignissim arcu at lacinia facilisis. Ut sit amet accumsan
+                    lorem. In semper nisl quis congue venenatis.
+                  </p>
+                  <p class="seo-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam pharetra pellentesque lacus, ac ultricies augue semper
+                    quis. Nullam dignissim arcu at lacinia facilisis. Ut sit
+                    amet accumsan lorem. In semper nisl quis congue venenatis.
+                    Donec aliquet hendrerit facilisis. Curabitur mollis sapien a
+                    felis pharetra, in eleifend odio consectetur. Mauris dictum,
+                    neque sit amet porttitor vulputate, odio nisi dapibus ipsum,
+                    sed cursus massa felis vel ex. Fusce interdum bibendum
+                    tortor, et sodales ligula gravida at. Integer sit amet justo
+                    eu orci tincidunt euismod ut ac tortor.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Etiam pharetra
+                    pellentesque lacus, ac ultricies augue semper quis. Nullam
+                    dignissim arcu at lacinia facilisis. Ut sit amet accumsan
+                    lorem. In semper nisl quis congue venenatis.
+                  </p>
+                </div>
+              </div>
+              <div class="seo-block__wrapper-2">
+                <h3 class="seo-block__title-3">Блок заголовок h3</h3>
+                <div class="seo-block__lists">
+                  <ol class="seo-block__list-ol">
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ol>
+                  <ul class="seo-block__list-ul">
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li class="seo-block__list-item">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container-xl">
+      <div class="footer__container">
+        <div class="footer__top">
+          <img
+            class="footer__logo"
+            src="./assets/images/icons/logo.svg"
+            alt="logo CARGOFF"
+          />
+          <div class="footer__phone-wrapper">
+            <a href="tel:+8(800)250-07-47">8 (800) 250-07-47</a>
+            <p class="footer__phone-text">Круглосуточная горячая линия</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__nav-col">
+            <span class="footer__nav-title">Компания</span>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Реквизиты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <span class="footer__nav-title">Информация</span>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Калькулятор</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Доверенности, договоры и заявления</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Документы для отправки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Требования к грузу</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Как отправить и получить груз</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Документы на получение</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Условия оплаты услуг</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <span class="footer__nav-title">Автопарк</span>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Грузовик 5 тонн</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Грузовик 10 тонн</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Грузовик 20 тонн</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Газель бортовая</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Газель рефрижератор</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Газель цельнометаллическая</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <span class="footer__nav-title">Услуги</span>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Доставка в сетевые магазины</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка опасных грузов</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка сборных грузов</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Логистика для АПК</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Перевозка негабаритных грузов</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Страхование грузов</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#"
+                  >Перевозка рефрижераторных грузов</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-inner">
+            <p class="footer__copyright">
+              © 2024. ООО “Каргофф” - перевозки грузов автомобильным транспортом
+              по России
+            </p>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__socials-link">
+              <img
+                src="./assets/images/icons/icon_telegram.svg"
+                alt="icon_telegram"
+              />
+            </a>
+            <a href="#" class="footer__socials-link">
+              <img src="./assets/images/icons/icon_vk.svg" alt="icon_vk" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- POPUPS -->
+    <div id="popup-delivery" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close close-popup"></a>
+          <div class="calc">
+            <h2 class="calc__title">Рассчитать доставку</h2>
+            <form class="calc__form" id="form-3">
+              <div class="calc__col">
+                <div class="calc__row">
+                  <label for="date">Когда подать машину</label>
+                  <input
+                    class="calc__input _req"
+                    type="text"
+                    name="date"
+                    id="date"
+                    placeholder="дд.мм.гггг"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="calc__row">
+                  <label for="from-address">Откуда</label>
+                  <input
+                    class="calc__input _req"
+                    type="text"
+                    name="from-address"
+                    id="from-address"
+                    placeholder="Введите адрес"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="calc__row">
+                  <label for="to-address">Куда</label>
+                  <input
+                    class="calc__input _req"
+                    type="text"
+                    name="to-address"
+                    id="to-address"
+                    placeholder="Введите адрес"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="calc__col">
+                <div class="select-box">
+                  <span class="select-title">Тоннаж</span>
+                  <div class="options-container" id="oc-1"></div>
+                  <div class="selected" id="selected-1">1.5 тонны</div>
+                  <input
+                    class="input__hidden"
+                    type="text"
+                    id="typeSel"
+                    name="typeSel"
+                  />
+                </div>
+                <div class="select-box">
+                  <span class="select-title">Тип оплаты</span>
+                  <div class="options-container" id="oc-2"></div>
+                  <div class="selected" id="selected-2">Наличный расчет</div>
+                  <input
+                    class="input__hidden"
+                    type="text"
+                    id="markSel"
+                    name="markSel"
+                  />
+                </div>
+                <div class="select-box">
+                  <span class="select-title">Тип кузова</span>
+                  <div class="options-container" id="oc-3"></div>
+                  <div class="selected" id="selected-3">Тентованный</div>
+                  <input
+                    class="input__hidden"
+                    type="text"
+                    id="modelSel"
+                    name="modelSel"
+                  />
+                </div>
+              </div>
+              <div class="calc__col">
+                <div class="calc__row">
+                  <label for="date">Ваш номер телефона</label>
+                  <input
+                    class="calc__input _req"
+                    type="tel"
+                    name="phone-3"
+                    id="phone-3"
+                    placeholder="Введите номер телефона"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="calc__row">
+                  <label for="from-address">Комментарии к заказу</label>
+                  <textarea
+                    class="textarea"
+                    id="comments"
+                    name="comments"
+                    placeholder="Введите ваш комментарий"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="calc__col">
+                <div class="calc__row">
+                  <label for="your-name">Как к вам обращаться</label>
+                  <input
+                    class="calc__input _req"
+                    type="text"
+                    name="your-name"
+                    id="your-name"
+                    placeholder="Введите ваше имя"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="calc__row-btn">
+                  <button class="calc___btn">
+                    <span>Заказать расчет стоимости</span>
+                  </button>
+                  <p class="calc__policy">
+                    Отправляя заявку Вы соглашаетесь <br />
+                    с политикой конфиденциальности
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POPUPS END-->
+  </body>
+</html>
